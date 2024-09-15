@@ -8,6 +8,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class    LoanCalculatorApplication extends Application {
+
+    /*
+    start method will assign Stage a Scene from the FXMLLOADER and show the Stage
+    main Method will launch the program
+     */
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoanCalculatorApplication.class.getResource("loanCalculator-view.fxml"));

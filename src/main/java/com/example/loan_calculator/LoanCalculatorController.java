@@ -23,6 +23,12 @@ public class LoanCalculatorController {
     @FXML
     private Button calculator_button;
 
+    /*
+    when user clicks on button calculator_button:
+    user input from TetField instances will be converted to doubles and assigned to double variables interest, years, amount
+    the variables will then be used to calculate monthlyPayment and totalPayment
+    TextFields totalPayment_textField and monthlyPayment_textField will set text as the values of monthlyPayment and totalPayment
+     */
     @FXML
     protected void onCalculatorButtonClicked() {
         double interest = (Double.parseDouble(interestRate_textField.getText()))/100;
